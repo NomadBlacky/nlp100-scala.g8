@@ -7,17 +7,15 @@ import org.scalatest.{FunSuite, Matchers}
   */
 class Chapter01Test extends FunSuite with Matchers {
 
+  override def suiteName: String = "第1章: 準備運動"
+
   test("00. 文字列の逆順") {
     /**
       * 文字列"stressed"の文字を逆に（末尾から先頭に向かって）並べた文字列を得よ．
       */
     val text = "stressed"
 
-    // === Write your code ===
-
     val result = ""
-
-    // =======================
 
     result shouldBe "desserts"
   }
@@ -28,11 +26,7 @@ class Chapter01Test extends FunSuite with Matchers {
       */
     val text = "パタトクカシーー"
 
-    // === Write your code ===
-
     val result = ""
-
-    // =======================
 
     result shouldBe "パトカー"
   }
@@ -44,11 +38,7 @@ class Chapter01Test extends FunSuite with Matchers {
     val text1 = "パトカー"
     val text2 = "タクシー"
 
-    // === Write your code ===
-
     val result = ""
-
-    // =======================
 
     result shouldBe "パタトクカシーー"
   }
@@ -59,11 +49,7 @@ class Chapter01Test extends FunSuite with Matchers {
       * という文を単語に分解し，各単語の（アルファベットの）文字数を先頭から出現順に並べたリストを作成せよ．
       */
 
-    // === Write your code ===
-
     val result = List[Int]()
-
-    // =======================
 
     result shouldBe List(3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9)
   }
@@ -76,12 +62,7 @@ class Chapter01Test extends FunSuite with Matchers {
       * 取り出した文字列から単語の位置（先頭から何番目の単語か）への連想配列（辞書型もしくはマップ型）を作成せよ．
       */
 
-    // === Write your code ===
-
-    val result = ""
-    fail()
-
-    // =======================
+    val result = Map()
 
     val expect = Map(
        1 -> "H" ,  2 -> "He",  3 -> "Li",  4 -> "Be",  5 -> "B" ,
@@ -108,19 +89,11 @@ class Chapter01Test extends FunSuite with Matchers {
   }
 
   def wordNGram(text: String, gram: Int): List[List[String]] = {
-    // === Write your code ===
-
     List()
-
-    // =======================
   }
 
   def charNGram(text: String, gram: Int): List[String] = {
-    // === Write your code ===
-
     List()
-
-    // =======================
   }
 
   test("06. 集合") {
@@ -130,12 +103,7 @@ class Chapter01Test extends FunSuite with Matchers {
       * さらに，'se'というbi-gramがXおよびYに含まれるかどうかを調べよ．
       */
 
-    // === Write your code ===
-
     val result = ""
-    fail()
-
-    // =======================
 
     result shouldBe "desserts"
   }
@@ -146,10 +114,7 @@ class Chapter01Test extends FunSuite with Matchers {
       * さらに，x=12, y="気温", z=22.4として，実行結果を確認せよ．
       */
 
-    // === Write your code ===
-
     val result = ""
-    fail()
 
     // =======================
 
@@ -164,12 +129,8 @@ class Chapter01Test extends FunSuite with Matchers {
       * この関数を用い，英語のメッセージを暗号化・復号化せよ．
       */
 
-    // === Write your code ===
-
     val result = ""
     fail()
-
-    // =======================
 
     result shouldBe "desserts"
   }
@@ -182,12 +143,8 @@ class Chapter01Test extends FunSuite with Matchers {
       * を与え，その実行結果を確認せよ．
       */
 
-    // === Write your code ===
-
     val result = ""
     fail()
-
-    // =======================
 
     result shouldBe "desserts"
   }
