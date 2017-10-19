@@ -84,7 +84,7 @@ class Chapter01Test extends FunSuite with Matchers {
       List("I", "am"), List("am", "an"), List("an", "NLPer")
     )
     charNGram("I am an NLPer", 2) shouldBe List(
-
+      "I ", " a", "am", "m ", " a", "an", "n ", " N", "NL", "LP", "Pe", "er"
     )
   }
 
@@ -103,9 +103,21 @@ class Chapter01Test extends FunSuite with Matchers {
       * さらに，'se'というbi-gramがXおよびYに含まれるかどうかを調べよ．
       */
 
-    val result = ""
+    val x = Set("")
+    val y = Set("")
 
-    result shouldBe "desserts"
+    // 和集合
+    Set() shouldBe Set("pa", "ar", "ra", "ap", "ad", "di", "is", "se", "ag", "gr", "ph")
+
+    // 積集合
+    Set() shouldBe Set("pa", "ar", "ra", "ap")
+
+    // 差集合
+    Set() shouldBe Set("ad", "di", "is", "se")
+
+    // 含まれるか
+    x // true
+    y // false
   }
 
   test("07. テンプレートによる文生成") {
@@ -113,13 +125,10 @@ class Chapter01Test extends FunSuite with Matchers {
       * 引数x, y, zを受け取り「x時のyはz」という文字列を返す関数を実装せよ．
       * さらに，x=12, y="気温", z=22.4として，実行結果を確認せよ．
       */
-
-    val result = ""
-
-    // =======================
-
-    result shouldBe "desserts"
+    fail()
   }
+
+  // def templete()
 
   test("08. 暗号文") {
     /**
@@ -128,11 +137,7 @@ class Chapter01Test extends FunSuite with Matchers {
       * その他の文字はそのまま出力
       * この関数を用い，英語のメッセージを暗号化・復号化せよ．
       */
-
-    val result = ""
     fail()
-
-    result shouldBe "desserts"
   }
 
   test("09. Typoglycemia") {
@@ -142,10 +147,6 @@ class Chapter01Test extends FunSuite with Matchers {
       * （例えば"I couldn't believe that I could actually understand what I was reading : the phenomenal power of the human mind ."）
       * を与え，その実行結果を確認せよ．
       */
-
-    val result = ""
     fail()
-
-    result shouldBe "desserts"
   }
 }
